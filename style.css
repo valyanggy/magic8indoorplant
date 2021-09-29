@@ -1,0 +1,212 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+    
+     :root {
+        font-size: 20px;
+    }
+    
+    body {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #ffffff;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.03em;
+    }
+    
+    .plant {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url(plant.png) no-repeat center center fixed;
+        background-size: 800px;
+    }
+    
+    .face {
+        position: relative;
+        width: 900px;
+        height: 900px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .face::before {
+        content: '';
+        position: absolute;
+        top: 600px;
+        width: 150px;
+        height: 70px;
+        background-color: black;
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        transition: 0.5s;
+        border: 10px solid #ffffff;
+    }
+    
+    .face:hover::before {
+        top: 600px;
+        width: 50px;
+        height: 10px;
+        background-color: black;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        transition: 0.5s;
+    }
+    
+    .eyes {
+        position: relative;
+        top: -10px;
+        display: flex;
+        justify-content: space-between;
+        width: 530px;
+    }
+    
+    .outline {
+        top: 10%;
+        width: 250px;
+        height: 250px;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 50%;
+        outline: 9px solid rgb(0, 0, 0);
+        outline-offset: -20px;
+    }
+    
+    .eyes .eye {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        display: block;
+        background: #fff;
+        margin: 0;
+        border-radius: 50%;
+    }
+    
+    .eyes .eye::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translate(5%, -40%);
+        width: 130px;
+        height: 130px;
+        background: black;
+        border-radius: 50%;
+    }
+    
+    .ask {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        z-index: 100;
+        max-width: 20%;
+    }
+    
+    .ask h1 {
+        font-size: 23px;
+        line-height: 22px;
+        padding: 10px;
+        font-weight: 500;
+    }
+    
+    input {
+        border: 5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 11.2601px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .ask button {
+        color: white;
+        background: black;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        border: 5px solid #000000;
+    }
+    
+    .ask button:hover {
+        color: black;
+        background: white;
+        border: 5px solid #000000;
+    }
+    
+    .ask button:active {
+        background: rgb(99, 99, 99);
+        border: 5px solid rgb(99, 99, 99);
+    }
+    
+    .answer {
+        position: absolute;
+        top: 2%;
+        left: 3%;
+        text-align: left;
+        max-width: 88%;
+    }
+    
+    .tag {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        z-index: 100;
+        letter-spacing: 0.03em;
+    }
+    
+    .frame a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .frame {
+        border: 5px solid #000000;
+        border-radius: 20px;
+        padding: 9px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+    
+    #coin {
+        font-size: 4.5em;
+        font-weight: 600;
+        text-align: left;
+        line-height: 1em;
+        ;
+    }
+    
+    #background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+    }
+    
+    .fruit {
+        background: url(fruit.jpg) no-repeat center center fixed;
+        background-size: 60%;
+    }
+    
+    .grit {
+        background: url(grit.jpg) no-repeat center center fixed;
+        background-size: 60%;
+    }
+    
+    .water {
+        background: url(ripple.jpg) no-repeat center center fixed;
+        background-size: 60%;
+    }
